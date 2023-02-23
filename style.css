@@ -1,0 +1,203 @@
+/* Importação de fonte via Google Fonts --------- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+/* Alterações no root --------- */
+:root {
+    --rosa-pink: #DB1E8C;
+    --rosa-bebe: #FF97D3;
+    --azul-petroleo: #33475B;
+    --branco-bg: #FFFFFF;
+    --azul-bt: #264FEC;
+    --azul-bic:#0000EE;
+    --azul-titulo: #364372;
+    --preto: #000000;
+}
+
+/* Reset básico ---------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body --------- */
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header --------- */
+header {
+    height: 80px;
+    background-color: var(--branco-bg);
+    display: flex;
+}
+
+.container-elementos-header {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulo-principal {
+    font-size: 24px;
+    color: var(--azul-bic);
+    font-weight: 400;
+}
+
+.label-pesquisa {
+    background-color: var(--rosa-pink);
+    height: 40px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+}
+
+.input-pesquisa {
+    background-color: transparent;
+    padding: 4px;
+    border: none;
+    outline-style: none;
+}
+
+::placeholder {
+    color: var(--rosa-bebe);
+}
+
+/* Main --------- */
+main {
+    background-color: var(--azul-petroleo);
+    padding-bottom: 140px;
+}
+
+.trilhas-container {
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.trilhas-curso {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cursos {
+    background-color: var(--branco-bg);
+    border-radius: 4px;
+    width: 400px;
+    height: 450px;
+    margin-top: 40px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo-curso {
+    display: block;
+    margin-bottom: 24px;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--azul-titulo);
+    
+}
+
+.descricao-curso {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    color: var(--preto);
+    
+}
+
+.button {
+    display: flex;
+    align-self: flex-start;
+    color: var(--azul-bt);
+    text-align: center;
+    border: 1px solid var(--azul-bt);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 14px 18px;
+    transition: 0.5s; 
+}    
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--azul-bt);
+    color: var(--branco-bg);
+}
+
+
+/* Footer --------- */
+footer {
+    height: 110px;
+    background-color: var(--branco-bg);
+    display: flex;
+    
+}    
+
+.footer-container {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patrocinadores {
+    display: block;
+}
+
+.logos-patrocinadores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos-patrocinadores li {
+    padding: 12px;
+}
+
+.links-footer {
+    display: block;
+    font-size: 14px;
+}
+
+.links-footer a {
+    color: var(--preto);
+}
+
+.redes-sociais-regulamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contatos-regulamento, .redes-sociais-site {
+    padding: 30px;
+}
+
+.contatos-link li {
+    padding: 4px 0;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 18px;
+}
+
